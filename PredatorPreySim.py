@@ -92,8 +92,8 @@ class Simulation:
                         random_number = random.random()
                         if random_number < 0.85:
                             for animal2 in self.environment.animals:
-                                new_animal = None   # Got an "UnboundLocalError" because sometimes new_animal was not associated with a value, so
-                                                    # I made this check that is further checked in the conditional below
+                                new_animal = None   # Because sometimes new_animal was not associated with a value, an "UnboundLocalErorr" may occur,
+                                                    # so I made this check that is further checked in the conditional below
                                 if isinstance(animal2, Prey) and isinstance(animal, Prey):
                                     if math.dist([animal.x, animal.y], [animal2.x, animal2.y]) <= 20: # If two animals have distance <= 20, they reproduce
                                         new_animal = animal.reproduce()
@@ -149,7 +149,7 @@ class Food:
         self.energy = energy
         self.environment = environment
     
-    def foodDraw(self): # Method to graphically represent food WITHIN the class, as per requested, haha.
+    def foodDraw(self): # Method to graphically represent food WITHIN the class.
         self.foodShape = Circle(Point(self.x, self.y), 3) 
         self.foodShape.setFill("pink") # Food is a pink circle with radius 3
         self.foodShape.draw(self.environment.win) 
