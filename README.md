@@ -2,7 +2,7 @@
 Simulation of Ecosystems: a Predator Prey Simulation
 
 This project is a simulation of predators (red circles) and preys (green circles) in an ecosystem with food for prey (pink circles). 
-The graphical interface depends on the module graphics.py by Zelle, please ensure it is installed before starting the program.
+The graphical interface depends on the module graphics.py by Zelle, please ensure it is installed before attempting to run the program.
 
 # Simulation rules:
 
