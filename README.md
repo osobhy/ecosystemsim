@@ -44,4 +44,4 @@ The graphical interface depends on the module graphics.py by Zelle, please ensur
      I encourage over 500 steps!
 
 # Known issues:
-  a) Screen freezes and does not respond if all animals die and there are still steps to process.
+   - Screen freezes and does not respond if all animals die and there are still steps to process.
